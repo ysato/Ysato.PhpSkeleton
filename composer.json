@@ -1,0 +1,71 @@
+{
+    "name": "ysato/php-skeleton",
+    "description": "Generic php project skeleton package",
+    "keywords": [
+        "Skeleton"
+    ],
+    "homepage": "https://github.com/ysato/Ysato.PhpSkeleton",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpmetrics/phpmetrics": "^2.6",
+        "phpstan/phpstan": "^0.12",
+        "phpunit/phpunit": "^8.0",
+        "roave/security-advisories": "dev-master",
+        "squizlabs/php_codesniffer": "^3.5",
+        "vimeo/psalm": "^3.11"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Ysato\\PhpSkeleton\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "__Vendor__\\__Package__\\": [
+                "tests/",
+                "tests/Fake"
+            ]
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "Ysato\\PhpSkeleton\\Installer::preInstall"
+        ],
+        "post-create-project-cmd": [
+            "Ysato\\PhpSkeleton\\Installer::postInstall",
+            "composer update"
+        ],
+        "test": [
+            "./vendor/bin/phpunit"
+        ],
+        "tests": [
+            "@cs",
+            "./vendor/bin/phpmd src,tests text ./phpmd.xml",
+            "./vendor/bin/phpstan analyse -c phpstan.neon --no-progress",
+            "./vendor/bin/psalm",
+            "@test"
+        ],
+        "coverage": [
+            "php -dzend_extension=xdebug.so ./vendor/bin/phpunit --coverage-text --coverage-html=build/coverage"
+        ],
+        "cs": [
+            "./vendor/bin/php-cs-fixer fix -v --dry-run",
+            "./vendor/bin/phpcs src"
+        ],
+        "cs-fix": [
+            "./vendor/bin/php-cs-fixer fix -v",
+            "./vendor/bin/phpcbf src"
+        ],
+        "metrics": [
+            "phpmetrics --report-html=build/metrics --excluded-dirs=src/Exception src"
+        ]
+    }
+}

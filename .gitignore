@@ -1,0 +1,11 @@
+/.idea/*
+!/.idea/codeStyles
+/.idea/codeStyles/*
+!/.idea/codeStyles/Project.xml
+!/.idea/fileTemplates
+!/.idea/inspectionProfiles
+
+/vendor
+.php_cs.cache
+.phpunit.result.cache
+/build

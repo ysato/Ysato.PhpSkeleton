@@ -32,7 +32,7 @@ Once installed, the project will automatically be configured so you can run thos
 
 ### tests
 
-`composer tests` run [`phpcs`](https://github.com/squizlabs/PHP_CodeSniffer), [`php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer), [`phpstan`](https://github.com/phpstan/phpstan), [`psalm`](https://github.com/vimeo/psalm) and [`phpunit`](https://github.com/sebastianbergmann/phpunit). 
+`composer tests` run [`phpcs`](https://github.com/squizlabs/PHP_CodeSniffer), [`phpmd`](https://github.com/phpmd/phpmd), [`phpstan`](https://github.com/phpstan/phpstan), [`psalm`](https://github.com/vimeo/psalm) and [`phpunit`](https://github.com/sebastianbergmann/phpunit). 
 
 ### coverage
 
@@ -40,4 +40,4 @@ Once installed, the project will automatically be configured so you can run thos
 
 ### cs-fix
 
-`composer cs-fix` run [`php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) and [`phpcbf`](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically) to fix up the PHP code to follow the coding standards. (Check only command `composer cs` is also available.)
+`composer cs-fix` run [`phpcbf`](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically) to fix up the PHP code to follow the coding standards. (Check only command `composer cs` is also available.)

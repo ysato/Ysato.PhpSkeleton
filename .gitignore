@@ -1,8 +1,9 @@
 /.idea/*
 !/.idea/codeStyles
-!/.idea/codeStyles/Project.xml
 !/.idea/fileTemplates
 !/.idea/inspectionProfiles
+
+!.gitkeep
 
 /vendor
 .phpcs-cache

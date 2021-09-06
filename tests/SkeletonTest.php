@@ -8,10 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class __Package__Test extends TestCase
 {
-    /**
-     * @var __Package__
-     */
-    private $SUT;
+    private __Package__ $SUT;
 
     protected function setUp(): void
     {

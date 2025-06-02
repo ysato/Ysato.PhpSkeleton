@@ -50,10 +50,7 @@ class Installer
 
     private static function ask(IOInterface $io, string $question, string $default): string
     {
-        $ask = [
-            sprintf("\n<question>%s</question>\n", $question),
-            sprintf("\n(<comment>%s</comment>):", $default),
-        ];
+        $ask = sprintf("\n<question>%s</question>\n(<comment>%s</comment>):", $question, $default);
 
         return $io->ask($ask, $default);
     }

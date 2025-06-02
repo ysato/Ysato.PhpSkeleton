@@ -11,7 +11,7 @@
     },
     "require-dev": {
         "bear/qatools": "^1.9",
-        "composer/composer": "^1.10",
+        "composer/composer": "^2.8",
         "doctrine/coding-standard": "^8.1",
         "roave/security-advisories": "dev-master",
         "vimeo/psalm": "3.x-dev"

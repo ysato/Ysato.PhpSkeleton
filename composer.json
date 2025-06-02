@@ -7,7 +7,7 @@
     "homepage": "https://github.com/ysato/Ysato.PhpSkeleton",
     "license": "MIT",
     "require": {
-        "php": "^7.4"
+        "php": "^8.2"
     },
     "require-dev": {
         "bear/qatools": "^1.9",

@@ -1,5 +1,7 @@
 This library is heavily inspired by the [bear/qa-tools](https://github.com/bearsunday/BEAR.QATools), [koriym/Koriym.PhpSkeleton](https://github.com/koriym/Koriym.PhpSkeleton)
 
+test
+
 # A standard PHP project skeleton
 
 ## Create Project
